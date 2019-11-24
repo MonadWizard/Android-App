@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/conversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="9"
+        >
+    <EditText
+        android:id="@+id/edit_txt_user"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/montserrat"
+        android:hint="User :"
+        android:inputType="text"
+        android:textColor="#fff"
+        android:padding="12dp"
+        android:imeActionId="4"
+        android:gravity="left"
+        android:imeOptions="actionSend"
+        android:textColorHint="#fff"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit_txt_bot"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_edit_text"
+        android:fontFamily="@font/montserrat"
+        android:hint="Bot : "
+        android:inputType="text"
+        android:textColor="#fff"
+        android:padding="12dp"
+        android:imeActionId="4"
+
+        android:gravity="left"
+        android:imeOptions="actionSend"
+        android:textColorHint="#fff"
+        android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>
